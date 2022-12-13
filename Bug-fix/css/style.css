@@ -1,0 +1,100 @@
+#blog .owl-carousel {
+  position: relative;
+}
+
+#blog .owl-carousel .owl-item {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#blog .owl-carousel .owl-item .custom-item {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#blog .owl-carousel .owl-item .custom-item img {
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+
+#blog .owl-carousel .owl-item .custom-item .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 0;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+
+#blog .owl-carousel .owl-item .custom-item .overlay i {
+  color: white;
+}
+
+#blog .owl-carousel .owl-item .custom-item .overlay p {
+  color: white;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+
+#blog .owl-carousel .owl-item .custom-item:hover .overlay {
+  opacity: 1;
+}
+
+#blog .owl-carousel .owl-item .custom-item:hover .overlay p {
+  color: #c22c2c;
+}
+
+#blog .owl-carousel .owl-item .custom-item:hover img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+#blog .owl-carousel .owl-nav {
+  position: absolute;
+  top: calc((100% - 30px)/2);
+  margin-top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+#blog .owl-carousel .owl-nav button {
+  color: black;
+  font-size: 30px;
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  line-height: 0px;
+  margin: 0;
+  opacity: 1;
+  border-radius: unset;
+  position: relative;
+}
+
+#blog .owl-carousel .owl-nav button span {
+  position: absolute;
+  top: 18px;
+  left: 13px;
+}
+/*# sourceMappingURL=style.css.map */
