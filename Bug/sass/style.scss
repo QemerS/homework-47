@@ -47,12 +47,16 @@
             }
         }
         .owl-nav {
-            position: absolute;
-            top: calc((100% - 30px)/2);
+            // position: absolute;
+            // top: calc((100% - 30px)/2);
             margin-top: 0;
-            display: flex;
-            justify-content: space-between;
-            width: 100%;
+            // display: flex;
+            // justify-content: space-between;
+            // width: 100%;
+
+            // fix
+            position: relative;
+            top: -5rem;
             button {
                 color: black;
                 font-size: 30px;
@@ -63,12 +67,22 @@
                 margin: 0;
                 opacity: 1;
                 border-radius: unset;
-                position: relative;
+                // position: relative;
+
+                // fix
+                position: absolute;
+                
                 span {
                     position: absolute;
                     top: 18px;
                     left: 13px;
                 }
+            }
+            .owl-prev {
+                left: 0;
+            }
+            .owl-next {
+                right: 0;
             }
         }
     }

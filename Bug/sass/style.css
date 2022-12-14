@@ -67,16 +67,9 @@
 }
 
 #blog .owl-carousel .owl-nav {
-  position: absolute;
-  top: calc((100% - 30px)/2);
   margin-top: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 100%;
+  position: relative;
+  top: -5rem;
 }
 
 #blog .owl-carousel .owl-nav button {
@@ -89,12 +82,20 @@
   margin: 0;
   opacity: 1;
   border-radius: unset;
-  position: relative;
+  position: absolute;
 }
 
 #blog .owl-carousel .owl-nav button span {
   position: absolute;
   top: 18px;
   left: 13px;
+}
+
+#blog .owl-carousel .owl-nav .owl-prev {
+  left: 0;
+}
+
+#blog .owl-carousel .owl-nav .owl-next {
+  right: 0;
 }
 /*# sourceMappingURL=style.css.map */
