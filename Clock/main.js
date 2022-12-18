@@ -8,15 +8,13 @@ const hour = theDate.getHours();
 const minute = theDate.getMinutes();
 const seconds = theDate.getSeconds();
 
-// const hour = 12;
-// const minute = 59;
+// const hour = 6;
+// const minute = 20;
 // const seconds = 55;
 
 let degreeForSecs = seconds * 6;
 let degreeForMin = minute * 6;
-let degreeForHour = (hour > 12)? (hour - 12) * 30: hour * 30;
-
-console.log(degreeForHour);
+let degreeForHour = (hour > 12)? (hour - 12) * 30 + (minute * 0.5): hour * 30 + (minute * 0.5);
 
 function ticTac(sec, min, hour) {
     secondHandle.style.transform = `translate(-50%) rotate(${sec}deg)`;
