@@ -1,0 +1,126 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contaimer {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#33ccff), to(#ff99cc));
+  background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+  position: relative;
+  border: 1px solid;
+}
+
+.line {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  --rotDegree: 0;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  padding: .5rem;
+  -webkit-transform: translateX(-50%) rotate(var(--rotDegree));
+          transform: translateX(-50%) rotate(var(--rotDegree));
+}
+
+.line:nth-child(1) {
+  --rotDegree: 30deg;
+}
+
+.line:nth-child(2) {
+  --rotDegree: 60deg;
+}
+
+.line:nth-child(3) {
+  --rotDegree: 90deg;
+}
+
+.line:nth-child(4) {
+  --rotDegree: 120deg;
+}
+
+.line:nth-child(5) {
+  --rotDegree: 150deg;
+}
+
+.line:nth-child(6) {
+  --rotDegree: 180deg;
+}
+
+.line:nth-child(7) {
+  --rotDegree: 210deg;
+}
+
+.line:nth-child(8) {
+  --rotDegree: 240deg;
+}
+
+.line:nth-child(9) {
+  --rotDegree: 270deg;
+}
+
+.line:nth-child(10) {
+  --rotDegree: 300deg;
+}
+
+.line:nth-child(11) {
+  --rotDegree: 330deg;
+}
+
+.handle {
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+}
+
+.hour {
+  background-color: black;
+  width: 5px;
+  height: 100px;
+}
+
+.minute {
+  background-color: black;
+  width: 3px;
+  height: 120px;
+}
+
+.second {
+  background-color: red;
+  width: 1px;
+  height: 140px;
+}
+
+.center {
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  background-color: black;
+}
+/*# sourceMappingURL=main.css.map */
